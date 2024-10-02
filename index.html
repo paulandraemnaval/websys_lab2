@@ -3,34 +3,355 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
     <title>Document</title>
-    <style link="stylesheet" href="style.css"></style>
   </head>
-  <body>
-    <header>
-      <h1>Welcome to my portfolio!</h1>
-    </header>
-    <hr />
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="./pages/about.html">About Me</a></li>
-        <li><a href="./pages/contact.html">Contact Me</a></li>
+  <body class="flex h-[100vh] max-w-[100vw] flex-col relative scroll-smooth hide_scrollbar">
+    <!-- MOBILE -->
+    <nav
+      class="sm:hidden sticky top-0 flex w-full items-center mb-2 z-10 glassmorphism_light"
+    >
+      <a href="./index.html" class="self-center mr-auto">
+        <h1 class="font_aeonik_bold text-2xl leading-none">Navs.</h1>
+      </a>
+      <details class="list-none relative ">
+        <summary class="list-none ">
+          <img src="./assets/icons/menu.png" alt="menu_icon" class="nav_icon" />
+        </summary>
+        <ul class="flex gap-2 absolute w-[96.1vw] left-[-21.95rem] justify-evenly h-fit top-[3.85rem] glassmorphism_light border-t-0">
+          <a class="nav_icon" href="#overview"><img src="./assets/icons/abtme.png" alt="about_me_icon"></a>
+          <a class="nav_icon" href="#projects"><img src="./assets/icons/project.png" alt="projects_icon"></a>
+          <a class="nav_icon" href="#contact"><img src="./assets/icons/contact.png" alt="contact_icon"></a>
+          <a class="nav_icon" href="https://www.linkedin.com/in/paul-naval-112130327/"><img src="./assets/icons/linkedin.png" alt="linkedin_icon"></a>
+          <a class="nav_icon" href="https://github.com/paulandraemnaval"><img src="./assets/icons/github.png" alt="github_icon"></a>
+          
+        </ul>
+      </details>
+    </nav>
+
+    <!-- DESKTOP -->
+    <nav
+      class="hidden sm:flex sticky py-2 px-6 w-full h-fit justify-between glassmorphism_light top-0"
+    >
+      <a href="./index.html" class="self-center">
+        <h1 class="font_aeonik_bold text-2xl">Navs</h1>
+      </a>
+      <ul
+        class="flex gap-2 self-center p-2.5 glassmorphism_dark rounded-xl"
+      >
+        <li class="flex items-center">
+          <a href="#overview" class="z-10 nav_icon"><img src="./assets/icons/abtme.png" alt="about_me_icon"></a>
+        </li>
+        <li class="flex items-center">
+          <a href="#projects" class="z-10 nav_icon"><img src="./assets/icons/project.png" alt="projects_icon"></a>
+        </li>
+        <li class="flex items-center">
+          <a href="#contact" class="z-10 nav_icon"><img src="./assets/icons/contact.png" alt="contact_icon"></a>
+        </li>
+      </ul>
+      <ul class="flex gap-2 self-center p-4">
+        <li class="nav_icon border"><img src="./assets/icons/linkedin.png" alt="linkedin_icon"></li>
+        <li class="nav_icon border"><img src="./assets/icons/github.png" alt="github_icon"></li>
       </ul>
     </nav>
-    <hr />
-    <main>
-      <section>
-        <h2>Home</h2>
-        <p>
-          Welcome to my portfolio! I am
-          <strong><u>Paul Andrae M. Naval</u></strong> and I want to pass this
-          subject
-        </p>
+
+    <main class="p-0 lg:m-0 flex flex-col max-w-[100vw]">
+      <section class="sm:min-h-[90vh] min-h-[50vh] scroll-mt-40" id="home">
+        <div
+          class="flex lg:m-0 mb-[2rem] mt-[2rem] flex-col gap-0 leading-none sm:text-[6rem] text-[1.75rem]"
+        >
+        <img src="./assets/images/landing.png" alt="">
+      </div>
+          <div class="flex gap-2 p-4 lg:ml-[10rem] ml-[4rem] flex-nowrap">
+            <a
+              class="whitespace-nowrap sm:px-6 sm:py-4 flex py-2 px-4 rounded-[5rem] transition-all duration-300 sm:text-lg text-sm leading-7 font-normal bg-black text-white w-fit hover:rounded-[1rem] hover:bg-blue-600 ease-in-out"
+              href="./assets/Naval, Paul.pdf"
+            >
+              See Resume
+            </button>
+            <a
+              class="whitespace-nowrap sm:py-4 sm:px-6 px-4 py-2 sm:text-lg text-sm font-normal rounded-[5rem] bg-white text-black w-fit border border-gray-300 duration-300 ease-in-out transition-all hover:rounded-[1rem] hover:border-gray-500"
+              href="#contact"
+              >
+              Let's Connect
+          </a>
+          </div>
+        </div>
+        <div class="lg:hidden flex w-full"><img src="./assets/images/me.png" alt="me" class="m-auto"></div>
       </section>
-    </main>
-    <hr />
-    <footer>Made by <strong>Paul Andrae M. Naval</strong></footer>
-    <hr />
+
+      <section class="flex" id="overview">
+        <div class="flex flex-col">
+          <div class="flex flex-col lg:pr-20 lg:pl-20 lg:pt-20 lg:pb-4 p-4 w-full gap-4 flex-wrap">
+            <p class="font_aeonik_bold">
+              <span class="text-5xl">Hi! my name is </span>
+            </p>
+            <p class="font_aeonik_bold">
+               <span class="orange_gradient text-5xl">Paul Naval<br /></span>
+              <span class="text-gray-400 text-right">/pɔl/ - /ˈnəvəl/</span>
+            </p>
+            
+          </div>
+          <div class="flex flex-col lg:pr-20 lg:pl-20 lg:pt-10 lg:pb-4 p-4">
+          
+            <div class="max-w-full break-words font_aeonik">
+              <p
+              class="font_aeonik sm:text-2xl text-lg"
+            >
+              <span class="font_aeonik_extra_bold text-3xl" id="servicesend">
+                CONSTANT GROWTH
+              </span>
+              <br />
+              As a developer,
+              <span class="orange_gradient">
+                I'm passionate in constantly improving my skills and exploring
+                new technologies </span
+              >. I'm currently learning Next JS 13 and I'm excited to see what I
+              can build with it. <br /><br />
+              <span class="blue_gradient"
+                >I have a foundation in React JS</span
+              >
+              and I'm confident in my ability to build responsive and dynamic
+              web applications. 
+              <br /><br />
+
+              <span class="orange_gradient"
+                >I'm also a Third Year Computer Science student at Visayas State
+                University</span
+              >
+              and I've learned many things that have helped me in my journey as
+              a developer. I've also met many talented individuals who have
+              inspired me to keep learning and growing.
+            </p>
+            </div>
+            <a
+            class="mt-4 font_aeonik lg:text-lg w-fit px-4 py-2 text-center rounded-[5rem] sm:px-6 sm:py-2.5 text-xs border border-gray-400 text-black sm:w-fit hover:rounded-[1rem] hover:border-gray-500 duration-300 ease-in-out cursor-pointer "
+            href="#projects"
+          >
+            See Projects
+          </a>
+       
+          </div>
+        </div>
+        <img src="./assets/images/me.png" alt="" class="lg:flex flex-1 hidden">
+      </section>
+      
+      <section class="lg:mb-0 mb-40">
+        <div
+          class="flex lg:flex-row flex-col lg:p-40 p-4 max-w-full gap-4 flex-wrap"
+        >
+          <div
+            class="flex flex-col flex-1 border items-left bg-black text-white rounded-lg p-4"
+          >
+            <span class="font_aeonik_bold"
+              >Visayas State University<br />
+            </span>
+            <span class="font_aeonik text-gray-400"
+              >BS in Computer Science</span
+            >
+            <div class="border border-[rgba(255,255,255,0.2)] mt-4 mb-4"></div>
+
+            <span class="font_aeonik_light font-extralight">
+              I have a strong foundation in Computer Science thanks to the
+              talented professors at Visayas State University. The excellent and
+              challenging curriculum has helped me grow as a developer and has
+              given me the skills I need to succeed in the tech industry.
+            </span>
+          </div>
+          <div
+            class="flex flex-col flex-1 border items-left p-4 border-gray-400 rounded-lg"
+          >
+            <span class="font_aeonik_bold mb-auto"
+              >Learning NextJS13 and ReactJS<br />
+            </span>
+            <div class="border mt-4 mb-4"></div>
+
+            <span class="font_aeonik_light font-extralight">
+              Although I'm still learning, I'm confident in my ability to build
+              responsive and dynamic web applications. I'm currently working on
+              a project that I'm excited to share with the world. I'm also
+              learning Next JS 13 and I'm excited to see what I can build with
+              it.
+            </span>
+          </div>
+          <div
+            class="flex flex-col flex-1 border items-left p-4 border-gray-400 rounded-lg"
+          >
+            <span class="font_aeonik_bold mb-auto"
+              >My constant pursuit for growth<br />
+            </span>
+            <div class="border mt-4 mb-4"></div>
+
+            <span class="font_aeonik_light font-extralight">
+              Although I'm still learning, I'm confident in my ability to build
+              responsive and dynamic web applications. I'm currently working on
+              a project that I'm excited to share with the world. I'm also
+              learning Next JS 13 and I'm excited to see what I can build with
+              it.
+            </span>
+          </div>
+        </div>
+      </section>
+      <div
+        class="flex flex-row w-full gap-4 self-start mb-4 sticky top-0 glassmorphism_light items-center"
+      >
+        <div class="flex flex-col lg:pl-[10rem] pl-4">
+          <p class="font_aeonik_bold text-xl">Projects</p>
+          <p class="max-w-full break-words text-gray-500 font_aeonik lg:text-base text-sm">
+            my passion projects that I've worked on
+          </p>
+        </div>
+        <div class="flex flex-col w-full lg:pr-40 pr-4 top-0 z-10">
+          <a
+            class="font_aeonik lg:text-lg text-center rounded-[5rem] sm:px-6 sm:py-2.5 py-2 px-4 text-xs border border-gray-400 text-black sm:w-fit hover:rounded-[1rem] hover:border-gray-500 duration-300 cursor-pointer self-end hover:bg-black hover:text-white"
+            href="https://github.com/paulandraemnaval"
+          >
+            See Github Profile
+          </a>
+        </div>
+      </div>
+      <section class="scroll-mt-[5rem]" id="projects">
+        <div class="flex flex-col">
+          <div class="flex flex-col w-full lg:px-40 lg:py-10 p-4">
+            <img
+              src="./assets/images/Promptopia.png"
+              alt="Promptopia"
+              class="shadow-xl"
+            />
+            <div class="flex flex-col gap-4 mt-4 mb-20">
+              <p class="font_aeonik_light text-lg mb-4">
+                <span class="orange_gradient">Promptopia </span>is a web
+                application that helps users share to their powerful AI
+                directives to the world. Its a platform where users can see and
+                comment on with the latest and most popular prompts. Users can
+                also see the profiles of the user who created them. Users can
+                also create and manage their own prompts and share them with the
+                world.
+              </p>
+              <p class="font_aeonik_bold text-3xl">Technologies Used</p>
+              <p class="font_aeonik_bold text-2xl mb-4">
+                NextJS13, <span class="blue_gradient">React JS</span>,
+                <span class="google_gradient">Google OAuth</span>,
+                <span class="green_gradient">Mongo Database</span>
+              </p>
+
+              <a
+                class="font_aeonik text-lg w-fit text-center rounded-[5rem] sm:px-6 sm:py-2.5 py-2 px-4 sm:text-sm border border-gray-400 text-black hover:rounded-[1rem] hover:border-gray-500 duration-300 ease-in-out cursor-pointer"
+                href="https://promptopia-next-livid.vercel.app/"
+              >
+                See Website
+              </a>
+            </div>
+            <img
+              src="./assets/images/Chatterbox.png"
+              alt="chatterbox"
+              class="shadow-xl"
+            />
+            <div class="flex flex-col gap-4 mt-4 mb-20">
+              <p class="font_aeonik_light text-lg mb-4">
+                <span class="blue_gradient">Chatterbox </span> is a web chat app
+                that allows users to chat with each other in real time. You can
+                create an account with just a username, email, and password and
+                add other users to chat with. Users can create and join chat
+                rooms and send messages to each other. Other features include
+                seen reciepts, online status, and more.
+              </p>
+              <p class="font_aeonik_bold text-3xl">Technologies Used</p>
+              <p class="font_aeonik_bold text-2xl mb-4">
+                <span class="blue_gradient">React TS</span>,
+                <span class="google_gradient"
+                  >Firebase Auth, DB, and Storage</span
+                >
+              </p>
+
+              <a
+                class="font_aeonik text-lg w-fit text-center rounded-[5rem] sm:px-6 sm:py-2.5 py-2 px-4 sm:text-sm border border-gray-400 text-black hover:rounded-[1rem] hover:border-gray-500 duration-300 ease-in-out cursor-pointer"
+                href="https://navschat.vercel.app/"
+              >
+                See Website
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="flex flex-row w-full gap-4 self-start mb-4 sticky top-0"
+      ></div>
+
+      <div
+        class="flex flex-row w-full gap-4 self-start mb-4 sticky top-0 glassmorphism_light items-center"
+      >
+        <div class="flex flex-col lg:pl-[10rem] pl-4">
+          <p class="font_aeonik_bold text-xl">Contact me!</p>
+          <p class="max-w-full break-words text-gray-500 font_aeonik">
+            Let's talk about how we can bring your ideas to life!
+          </p>
+        </div>
+        <div class="flex flex-col w-full lg:pr-40 pr-4 top-0 z-10">
+          <a
+            class="font_aeonik lg:text-lg text-center rounded-[5rem] sm:px-6 sm:py-2.5 py-2 px-4 text-xs border border-gray-400 text-black sm:w-fit hover:rounded-[1rem] hover:border-gray-500 duration-300 cursor-pointer self-end hover:bg-black hover:text-white"
+            href="https://www.facebook.com/andrae.naval/"
+          >
+            See Facebook Profile
+          </a>
+        </div>
+      </div>
+      
+      <section class="scroll-mt-[8rem] lg:mb-10" id="contact">
+        <div class="flex sm:flex-row flex-col">
+          <div
+            class="flex sm:flex-col flex-row sm:max-w-[25rem] max-w-full gap-4 self-start mb-4"
+          >
+            
+          </div>
+          <p
+          class="font_aeonik lg:pr-[10rem] lg:pl-[4rem] pr-[2rem] pl-[1rem] mt-6 sm:text-2xl text-lg"
+        >
+          <span class="font_aeonik_extra_bold text-3xl" id="servicesend">
+          Let's bring your ideas to life
+          </span>
+          
+          <br/>
+          
+          With the help of your ideas, I'm positive we can make your idea the next big thing.
+          <br/>
+          <br/>
+
+          Let's keep in touch and talk about how we can make your ideas a reality. I'm excited to hear from you!
+          </p>
+        
+          <div class="flex w-full">
+            
+          </div>
+        </div>
+      </section>
+      
+
+      <section class="w-full h-fit flex scroll-mt-[2rem]" >
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 lg:p-20 p-4 w-full">
+          <p class="font_aeonik_bold text-4xl col-span-full">My contact information:</p>
+          <p class="text-2xl">
+            <span class="font_aeonik_bold google_gradient">GMail:</span>
+            <span class="font_aeonik text-gray-500">paul.andrae.malate@gmail.com</span>
+          </p>
+          <p class="text-2xl">
+            <span class="font_aeonik_bold blue_gradient">Facebook:</span>
+            <span class="font_aeonik text-gray-500">Andrae Naval</span>
+          </p>
+          <p class="text-2xl">
+            <span class="font_aeonik_bold blue_gradient">LinkedIn:</span>
+            <span class="font_aeonik text-gray-500">Andrae Naval</span>
+          </p>
+          <p class="text-2xl">
+            <span class="font_aeonik_bold text-black">Github:</span>
+            <span class="font_aeonik text-gray-500">paulandraemnaval</span>
+          </p>
+        </div>
+      </section>
+      </main>
+    <footer class="flex flex-col w-full h-fit items-center justify-center p-4 bg-black text-white">
+      <p class="font_aeonik_light text-center">
+        &copy; 2021 Paul Naval. All rights reserved.
+      </p>
   </body>
 </html>

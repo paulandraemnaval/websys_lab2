@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("./fonts/AeonikTRIAL-Regular.otf");
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("./fonts/AeonikTRIAL-Bold.otf");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("./fonts/AeonikTRIAL-Italic.otf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("./fonts/AeonikTRIAL-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+.font_aeonik {
+  font-family: "Aeonik", sans-serif;
+}
+
+.font_aeonik_bold {
+  font-family: "Aeonik", sans-serif;
+  font-weight: bold;
+}
+
+.font_aeonik_extra_bold {
+  font-family: "Aeonik", sans-serif;
+  font-weight: 800;
+}
+
+.font_aeonik_italic {
+  font-family: "Aeonik", sans-serif;
+  font-style: italic;
+}
+
+.font_aeonik_bold_italic {
+  font-family: "Aeonik", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.glassmorphism_light {
+  @apply border border-gray-200 p-5;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px) saturate(100%);
+  --webkit-backdrop-filter: blur(10px) saturate(100%);
+}
+
+.glassmorphism_dark {
+  backdrop-filter: blur(10px) saturate(100%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.nav_icon {
+  @apply sm:py-2 sm:px-4 py-2 px-[0.5rem] text-sm sm:text-base bg-white rounded-lg border hover:border-gray-500 transition-all cursor-pointer;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.google_gradient {
+  @apply bg-gradient-to-r from-red-500  to-yellow-500 bg-clip-text text-transparent;
+}
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.hide_scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide_scrollbar::webkit-scrollbar {
+  display: none;
+}
